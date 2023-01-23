@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+
+header,
+footer {
+  height: 6rem;
+  background-color: #111;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  min-height: 85vh;
+  background-color: #f6f6f6;
+  padding: 3rem 0;
+}
+
+.todo-container {
+  max-width: 70rem;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.item-wrapper {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: solid 1px rgb(232, 232, 232);
+}
+
+.icon-box {
+  margin-left: auto;
+}
+
+.add-todo-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.add-todo-input:focus {
+  outline: none;
+}
+
+.clear-all-complete {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.clear-all-btn {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #333;
+}
+
+.icon-refresh-todos {
+  cursor: pointer;
+}
+
+.item-icon {
+  cursor: pointer;
+  padding: 0 3px;
+}
+
+.icon-add-todo {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.todo-description {
+  color: #333;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+}
+
+.todo-description:focus {
+  outline: none;
+}
+
+.fa-trash-can,
+.fa-xmark {
+  visibility: hidden;
+}
+
+.fa-xmark {
+  margin-left: 0.6rem;
+}
+
+.todo-checkbox:checked + .todo-description {
+  text-decoration: line-through;
+  color: rgb(87, 87, 87);
+}
+
+.todo-action-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
